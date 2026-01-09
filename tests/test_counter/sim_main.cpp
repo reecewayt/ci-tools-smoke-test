@@ -5,7 +5,7 @@ int main(int argc, char** argv) {
     Verilated::commandArgs(argc, argv);
     Vdut* dut = new Vdut;
 
-    // Simulate for 100 clock cycles
+    // Simulate for 100 clock cyclesss 
     dut->reset = 1; // Assert reset
     for (int i = 0; i < 200; i++) {
         dut->clk = !dut->clk; // Toggle clock
