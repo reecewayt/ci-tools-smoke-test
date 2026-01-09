@@ -1,0 +1,10 @@
+name: SMOKE TEST - Using Reusable Workflows
+
+on: [push]
+
+jobs:
+  test-my-tools:
+    # This points to your OTHER repo (the tools repo)
+    uses: reecewayt/fpga-ci-tools/.github/workflows/verilator-reusable.yml@main
+    with:
+      test_dir: "tests"
