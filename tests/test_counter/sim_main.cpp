@@ -25,7 +25,7 @@ int main(int argc, char** argv) {
     } else {
         printf("FAILURE: Counter did not increment.\n");
         delete dut;
-        return 1; // Return 1 means FAIL
+        return 1; // Return 1 means FAIL 
     }
 }
 
